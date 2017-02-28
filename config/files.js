@@ -6,24 +6,26 @@
  *   - https://github.com/linemanjs/lineman/blob/master/config/files.coffee
  */
 module.exports = function(lineman) {
-  //Override file patterns here
-  return {
-      js: {
-          vendor: [
-              "vendor/js/angular.js",
-              "vendor/js/**/*.js"
-          ],
-          app: [
-              "app/js/app.js",
-              "app/js/**/*.js"
-          ]
-      },
-      less: {
-          compile: {
-              options: {
-                  paths: ["vendor/css/**/*.css", "app/css/**/*.less"]
-              }
-          }
-      }
-  };
+    //Override file patterns here
+    return {
+        js: {
+            vendor: [
+                "vendor/js/jquery.js",
+                "vendor/js/bootstrap.js",
+                "vendor/js/angular.js",
+                "vendor/js/**/*.js"
+            ],
+            app: [
+                "app/js/app.js",
+                "app/js/**/*.js"
+            ]
+        },
+        less: {
+            compile: {
+                options: {
+                    paths: ["vendor/css/boostrap.css", "vendor/css/bootstrap-theme.css", "app/css/**/*.less"]
+                }
+            }
+        }
+    };
 };
