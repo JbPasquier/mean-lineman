@@ -13,5 +13,8 @@
     "start": "lineman run",
     "test": "lineman spec-ci",
     "production": "lineman clean build && node -e \"var e = require('express'), a = e(); a.use(e.static('dist/')); a.listen(process.env.PORT || 8000); console.log('Server is ready at port ' + (process.env.PORT || 8000))\""
+  },
+  "dependencies": {
+    "lineman-babel": "0.0.2"
   }
 }
