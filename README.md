@@ -2,7 +2,7 @@
 
 # [MEAN](http://mean.io/) Starter with [Lineman](http://linemanjs.com/)
 
-## Angular (only ATM)
+## Angular
 
 ### Requirements
 
