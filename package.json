@@ -7,7 +7,7 @@
   "scripts": {
     "start": "lineman run",
     "test": "lineman spec-ci",
-    "production": "lineman clean build && node prod.js"
+    "production": "lineman clean build && node production.js"
   },
   "dependencies": {
     "express": "",
