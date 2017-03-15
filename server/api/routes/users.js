@@ -6,11 +6,7 @@ let router = express.Router();
 
 module.exports = (app) => {
 
-    app.get('/banane', function(req, res) {
-        res.send('Hello world !');
-    });
-
-    app.get('/loggedin', Auth.hasAuthorization, (req, res, next) => {
+    app.get('/token_status', Auth.hasAuthorization, (req, res, next) => {
         res.sendStatus(200);
     });
 
