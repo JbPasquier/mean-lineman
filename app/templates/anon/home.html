@@ -1,1 +1,7 @@
-<h1>Hello World</h1>
+<h1>Todo</h1>
+
+<input ng-model='newTodo.value'>
+<button ng-click='create()'>Create</button>
+<ul>
+    <li ng-repeat='todo in todos'><input ng-model='todo.value'> <button ng-click='update(todo._id, todo.value)'>Edit</button><button ng-click='delete(todo._id)'>Delete</button></li>
+</ul>
